@@ -1,0 +1,82 @@
+<% const cssPrefix = htmlWebpackPlugin.options.prefix %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <title><%= htmlWebpackPlugin.options.appTitle %></title>
+</head>
+<body>
+<header class="<%= cssPrefix %>-header">
+    <div class="<%= cssPrefix %>-header--top">
+        <div class="container-fluid">
+            <div class="flex-row justify-content-between">
+                <div class="flex-col-auto align-self-center">
+                    <a href="https://www.visitwilmingtonde.com/">
+                        <img class="<%= cssPrefix %>-logo" src="/images/logo.png" alt="">
+                        <img class="<%= cssPrefix %>-logo--medium" src="../images/<%= cssPrefix %>-logo-medium.png"
+                             alt="">
+                        <img class="<%= cssPrefix %>-logo--rounded" src="../images/<%= cssPrefix %>-logo--rounded.png"
+                             alt="">
+                    </a>
+                </div>
+                <div class="flex-col-auto ml-auto <%= cssPrefix %>-nav--col align-self-center">
+                    <nav class="<%= cssPrefix %>-top--nav">
+                        <ul class="m-0 p-0">
+                            <li><a href="https://www.visitwilmingtonde.com/meetings-and-events/"
+                                   title="Meetings & events">MEETINGS
+                                    &
+                                    EVENTS</a></li>
+                            <li><a href="https://www.visitwilmingtonde.com/weddings/" title="Weedings">WEDDINGS</a></li>
+                            <li><a href="https://www.visitwilmingtonde.com/groups-and-sports/" title="Grups & Sports">GROUPS
+                                    &
+                                    SPORTS</a></li>
+                            <li><a href="https://www.visitwilmingtonde.com/media/" title="Media">MEDIA</a></li>
+                            <li><a href="https://www.visitwilmingtonde.com/members/" title="Members">MEMBERS</a></li>
+                            <li><a href="https://www.visitwilmingtonde.com/contact-us/" title="Contact Us">CONTACT
+                                    US</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex-col-auto">
+                    <div class="flex-row <%= cssPrefix %>-header--buttons no-gutters ml-auto position-static">
+                        <div class="flex-col-auto">
+                            <button class="<%= cssPrefix %>-header--btn <%= cssPrefix %>-btn--search bg-purple"
+                                    type="button">
+                                <img class="img-responsive" src="/images/search.svg" alt="Search">
+                                <span>SEARCH</span>
+                            </button>
+                        </div>
+                        <div class="flex-col-auto">
+                            <button class="<%= cssPrefix %>-header--btn <%= cssPrefix %>-btn--nav bg-purple"
+                                    type="button">
+                                <i class="icon-hamburger"></i>
+                                <span>MENU</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="<%= cssPrefix %>-header--bottom">
+        <div class="container-fluid">
+            <div class="flex-row">
+                <div class="flex-col-auto ml-auto">
+                    <ul class="p-0 m-0">
+                        <li><a href="https://www.visitwilmingtonde.com/contact-us/">Things to Do</a></li>
+                        <li><a href="https://www.visitwilmingtonde.com/events/">Events</a></li>
+                        <li><a href="https://www.visitwilmingtonde.com/restaurants/">Restaurants</a></li>
+                        <li><a href="https://www.visitwilmingtonde.com/hotels/">Hotels</a></li>
+                        <li><a href="https://www.visitwilmingtonde.com/plan-your-trip/">Plan Your Trip</a></li>
+                        <li><a href="https://www.visitwilmingtonde.com/about-the-area/">About the Area</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+</body>
+</html>
